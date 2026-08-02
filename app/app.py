@@ -83,6 +83,7 @@ with Timely_analysis:
     with st.container(border=True):
         tab4, tab5, tab6 = st.tabs(['Monthly Analysis', 'Quarterly Analysis', 'Yearly Analysis'])
         with tab4:
+            st.text('*Use filter for specific duration')
             st.subheader('Monthly Sales:')
             fig = monthly_sales(df, from_date, to_date)
             st.plotly_chart(fig, use_container_width=True)
@@ -95,6 +96,7 @@ with Timely_analysis:
             fig = monthly_quantity(df, from_date, to_date)
             st.plotly_chart(fig, use_container_width=True)
         with tab5:
+            st.text('*Use filter for specific duration')
             st.subheader('Quarterly Sales:')
             fig = quarterly_sales(df, from_date, to_date)
             st.plotly_chart(fig, use_container_width=True)
@@ -107,6 +109,7 @@ with Timely_analysis:
             fig = quarterly_quantity(df, from_date, to_date)
             st.plotly_chart(fig, use_container_width=True)
         with tab6:
+            st.text('*Use filter for specific duration')
             st.subheader('Yearly Sales:')
             fig = yearly_sales(df, from_date, to_date)
             st.plotly_chart(fig, use_container_width=True)
