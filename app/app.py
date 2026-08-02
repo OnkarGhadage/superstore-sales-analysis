@@ -15,7 +15,7 @@ from analysis import yearly_quantity
 from analysis import day_wise_analysis
 from analysis import month_wise_analysis
 
-df = pd.read_pickle('../data/cleaned-data/cleaned.pkl')
+df = pd.read_pickle('data/cleaned-data/cleaned.pkl')
 st.title('Superstore Sales Analysis')
 
 st.sidebar.header('Filters')
