@@ -124,3 +124,4 @@ with Timely_analysis:
 
 with dataframe:
     st.dataframe(df)
+
